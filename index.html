@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <div id="logo">
+            <img src="images/man.png" alt="loading...">
+        </div>
+        <ul>
+            <li><a href="#Home" class="textcolor ele">Home</a></li>
+            <li><a href="#about" class="textcolor ele">About</a></li>
+            <li><a href="#services" class="textcolor ele">Services</a></li>
+            <li><a href="#port" class="textcolor ele">Portfolio</a></li>
+            <li><a href="#response" class="textcolor ele">Testimonials</a></li>
+            <li><a href="#con" class="textcolor ele">Contact</a></li>
+        </ul>
+        <div class="darkmode">
+            Dark Mode 
+            <label class="switch">
+                <input id="toggleSwitch" type="checkbox" onclick="changeLook()">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </nav>
+
+    <!-- Home section -->
+    <div class="container" id="Home">
+        <div class="content">
+            <h1 id="name1" class="textcolor">Hy! I am</h1>
+            <h1 id="name2">Saurav Kumar</h1>
+            <p id="intro" class="textcolor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, totam porro. Dolorum,
+                eligendi aspernatur. Inventore quia molestias nostrum nemo harum?</p>
+            <button class="btn">Hire me</button>
+
+            <div class="icons">
+                <a href="https://github.com/Saurav1298" target="_blank"><img src="images/github.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/saurav-kumar-5269921b7/" target="_blank"><img src="images/linkedin.png" alt=""></a>
+                <a href="https://www.instagram.com/saurav.kr_00/" target="_blank"><img src="images/instagram.png" alt=""></a>
+            </div>
+        </div>
+        <div id="imoji">
+            <img src="images/imoji gradient.png" alt="">
+        </div>
+        <div class="image">
+            <img src="images/logo6.jpg" alt="loading...">
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about">
+        <div class="left-about">
+            <img src="images/logo7.jpg" alt="">
+        </div>
+        <div class="right-about">
+            <div class="about-heading">
+                <h3 class="textcolor">Let Me Introduce</h3>
+                <h3 id="myself">Myself</h3>
+            </div>
+            <div class="intro2">
+                <p class="introduction">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam minus
+                    mollitia repudiandae quia aut debitis tenetur labore, id magni suscipit blanditiis quaerat
+                    dignissimos beatae hic deserunt rerum, doloremque, sapiente reiciendis?</p>
+                <p class="introduction">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam deleniti
+                    asperiores recusandae obcaecati error natus explicabo commodi similique praesentium eligendi animi
+                    laborum, et at quod hic doloribus unde. Laudantium numquam sequi perferendis, quos iste quia cum
+                    minima porro, quas quasi eaque esse quisquam odit pariatur, commodi similique molestiae totam?</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- services section -->
+    <div id="services">
+        <div class="left-section">
+            <div class="services-heading">
+                <h2 class="first textcolor" >My Awesome </h2>
+                <h2 class="second">Services</h2>
+                <button class="btn" id="cv" onclick="location.href='Documents/Saurav_kumar_202253_EEE_Resume.pdf';">Download CV</button>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="box" id="box-1">
+                <h4 class="heading">Software Engineer</h4>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cumque ut neque quaerat
+                    rem animi molestiae explicabo corrupti. Non placeat dolores ea nemo, tempora velit rerum
+                    necessitatibus consectetur quis officiis.</p>
+            </div>
+            <div class="box" id="box-2">
+                <h4 class="heading">Web Developer</h4>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aspernatur, ipsam totam
+                    eaque ea odio dolorem maxime repellat perspiciatis repudiandae saepe modi facilis obcaecati. Harum
+                    repellat deserunt repellendus inventore magnam.</p>
+            </div>
+            <div class="box" id="box-3">
+                <h4 class="heading">Beginner Competitive Programmer</h4>
+                <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad repellat non veritatis
+                    labore consectetur nisi beatae optio fuga, totam et eligendi quibusdam. Rerum eligendi sequi omnis
+                    animi blanditiis, at ex!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+
+    <div class="portfolio" id="port">
+        <div class="portfolio-heading">
+            <h2 class="textcolor">Recently Done </h2>
+            <h2 id="pro">Projects</h2>
+        </div>
+        <div class="projects">
+            <img src="images/Screenshot 2022-08-22 230420.jpg" alt="">
+            <img src="images/Screenshot 2022-08-22 231523.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="testimonials" id="response">
+        <div class="test-heading">Testimonials</div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/person4.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cupiditate architecto fuga,
+                        debitis delectus, sapiente laboriosam mollitia minus reprehenderit aliquid ipsam. Aut, porro!
+                        Exercitationem, voluptatibus itaque consectetur distinctio fuga numquam?</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/person2.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cupiditate architecto fuga,
+                        debitis delectus, sapiente laboriosam mollitia minus reprehenderit aliquid ipsam. Aut, porro!
+                        Exercitationem, voluptatibus itaque consectetur distinctio fuga numquam?</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/person5.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quibusdam quas corrupti aliquid
+                        distinctio nostrum dolore, alias at animi nesciunt quae suscipit, recusandae error
+                        exercitationem quaerat temporibus? Officiis, nesciunt sed.</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/person3.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quibusdam quas corrupti aliquid
+                        distinctio nostrum dolore, alias at animi nesciunt quae suscipit, recusandae error
+                        exercitationem quaerat temporibus? Officiis, nesciunt sed.</p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            autoplay: {
+                delay: 5000,
+            },
+        });
+
+    </script>
+
+    <section class="contact-section " id="con">
+        <div class="left-part">
+            <div id="con-head" class="services-heading">
+                <h2 class="first textcolor" >Get in Touch</h2>
+                <h2 class="second">Contact me</h2>
+            </div>
+        </div>
+
+        <div class="right-part">
+            <form action="">
+                <div class="form-group">
+                    <label for="name" class="textcolor" >Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="textcolor" >Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message" class="textcolor" >Message:</label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                </div>
+            </form>
+            <button class="btn" id="det">Send</button>
+        </div>
+    </section>
+
+
+    <div id="last">
+        <a href="mailto:saurav.thrill4326@gmail.com?" >saurav.thrill4326@gmail.com</a>
+        <div id="copyrights">
+            <a href="https://github.com/Saurav1298" target="_blank"><img class="backimg" src="images/github-free-icon-font.png" alt="" ></a>
+            <a href="https://www.linkedin.com/in/saurav-kumar-5269921b7/" target="_blank"><img class="backimg"src="images/icons8-linkedin-192.png" alt="" ></a>
+            <a href="https://www.instagram.com/saurav.kr_00/" target="_blank"><img class="backimg" src="images/instagram-free-icon-font.png" alt="" ></a>
+        </div>
+        <div class="footer-box">
+            <p>copyrights &copy; &nbsp;&nbsp;www.myPortfolio.com &nbsp;&nbsp;All rights reserved!!</p>
+        </div>
+    </div>
+</body>
+<script src="JS/body.js"></script>
+</html>
