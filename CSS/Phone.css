@@ -1,0 +1,329 @@
+/*using media query i will set the image width and margin of send button in contact*/
+
+.navbar {
+
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.navbar ul li a {
+    margin: 10px 0px;
+}
+
+/*Home section*/
+
+.container {
+    flex-wrap: wrap;
+}
+
+.content {
+    /* border: 2px solid black; */
+    padding-top: 180px;
+    padding-bottom: 50px;
+}
+
+.image {
+    display: block;
+    margin: auto;
+}
+
+#intro {
+    box-shadow: 25px -200px 120px -5px rgb(112, 195, 255);
+}
+
+.image img {
+    border: 2px solid yellow;
+    height: 30rem;
+    width: 35rem;
+    padding: 0px 5px;
+    margin-top: 0px;
+
+}
+
+/*About section*/
+
+#about {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.left-about img {
+    /* border: 2px solid maroon; */
+    height: 400px;
+    width: 400px;
+
+    border-radius: 56% 44% 54% 46% / 57% 49% 49% 42%;
+    z-index: -1;
+}
+
+.right-about {
+    /* border: 2px solid orangered; */
+    font-family: 'Rubik', sans-serif;
+
+    height: 100%;
+    margin-bottom: 80px;
+    width: 100%;
+}
+
+.about-heading {
+
+    display: block;
+    margin: auto;
+    box-shadow: 400px -170px 118px -36px rgb(252, 192, 252);
+}
+
+
+/*Services section*/
+
+#services {
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.left-section {
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.services-heading {
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    flex-direction: column;
+    margin: 30px auto;
+    box-shadow: -400px 140px 161px -33px rgb(191, 225, 250);
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    padding-top: 10px;
+}
+
+.box {
+    font-size: 15px;
+    margin: 5px 5px;
+    width: 20vw;
+}
+
+.right-section {
+    /* border: 2px solid maroon; */
+    width: 100%;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+#box-1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: 550px -250px 161px -33px rgb(254, 165, 254);
+}
+
+#box-2 {
+    position: relative;
+    left: 0;
+    top: 0;
+
+}
+
+#box-3 {
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+/*Portfolio section*/
+
+.projects {
+    flex-wrap: wrap;
+}
+
+/*Contact section*/
+
+#det {
+    margin-left: 12rem;
+}
+
+
+/*all box shadows*/
+
+@media (min-width: 850px) and (max-width: 1200px) {
+
+    #intro{
+        box-shadow: -20px -200px 120px -5px rgb(112, 195, 255);;
+    }
+
+    .about-heading {
+        box-shadow: 320px -450px 120px -36px rgb(255, 199, 255);
+    }
+ 
+
+    .services-heading {
+        box-shadow: -400px 150px 161px -33px rgb(191, 225, 250);
+    }
+
+    #box-1 {
+        box-shadow: 180px -80px 161px -33px rgb(254, 165, 254);
+    }
+
+    #pro {
+        box-shadow: 350px -36px 120px 50px rgb(191, 225, 250);
+    }
+
+    .test-heading {
+        box-shadow: 180px 84px 108px 21px rgb(255, 196, 255);
+    }
+
+    .swiper {
+        box-shadow: -400px 100px 200px -30px rgb(187, 227, 255);
+    }
+
+    #con-head {
+        box-shadow: 550px 22px 151px -10px rgb(255 180 255);
+    } 
+
+    #det {
+        margin-top: 8px;
+        margin-left: 10rem;
+    }
+
+    /* .right-part{
+        margin: auto;
+    } */
+    
+}
+
+@media  (max-width: 950px) {
+
+    body{
+        box-sizing: border-box;
+    }
+    .image img {
+        height: 300px;
+        width: 350px;
+    }
+
+    .content {
+        padding: 80px 50px;
+    }
+
+    .left-about img {
+        /* border: 2px solid maroon; */
+        height:300px;
+        width: 300px;
+    
+        border-radius: 56% 44% 54% 46% / 57% 49% 49% 42%;
+        z-index: -1;
+    }
+
+    .about-heading {
+        box-shadow: none;
+    }
+ 
+    #intro{
+        box-shadow: -5px -210px 120px -5px rgb(112, 195, 255);;
+    }
+
+    .intro2 {
+        box-shadow: 0px 30px 150px -20px rgb(136 208 250);
+        font-size: 15px;
+    }
+    .services-heading {
+        box-shadow: -400px 150px 161px -33px rgb(191, 225, 250);
+    }
+
+    #box-1 {
+        box-shadow: none;
+    }
+
+    #pro {
+        box-shadow: none;
+    }
+
+    .projects img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .test-heading {
+        box-shadow: none;
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    
+    .swiper {
+        box-shadow: -400px 100px 200px -30px rgb(187, 227, 255);
+    }
+
+    #con-head {
+        box-shadow: 50px 300px 151px -10px rgb(255 180 255);
+    } 
+
+    #det {
+        margin-top: 8px;
+        display: block;
+        margin: auto;
+    }
+
+    .box {
+        width: auto;
+    }
+
+    .swiper {
+        width: auto;
+        height: auto;
+    
+    }
+
+    .contact-section{
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .left-part {
+        width: 100%;
+        display: flex;
+
+    }
+
+    .right-part {
+        width: 100%;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+    
+    #con-head{
+        display: block;
+        margin: auto;
+    }
+
+    .form-group input,
+textarea {
+    border: 3px solid var(--var-color);
+    width: 100%;
+}
+}
